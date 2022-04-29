@@ -22,14 +22,15 @@ function nav() {
 }
 
 function menuMobile() {
-    const menuMobile = document.querySelector(".js-menu-mobile") as SVGElement
-    if(menuMobile) {
-        menuMobile.onclick = ()=>{
-            const modal = document.querySelector(".js-menu-mobile-modal")
-
-            modal.classList.toggle("hidden")
-            document.body.classList.toggle("no-scroll")
-
-        }
+    const menus = document.querySelectorAll(".js-menu-mobile") as NodeListOf<HTMLElement>
+    if(menus) {
+        menus.forEach(menuMobile => {
+            menuMobile.onclick = ()=>{
+                const modal = document.querySelector(".js-menu-mobile-modal")
+    
+                modal.classList.toggle("hidden")
+                document.body.classList.toggle("no-scroll")
+            }
+        })
     }
 }
