@@ -6,6 +6,13 @@ html { font-size: 62.5%; box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
 body{ 
     font-size: 16px;
+
+    background-color: red;
+    background: rgb(64,64,64);
+    background: -moz-linear-gradient(9deg, rgba(64,64,64,1) -15%, rgba(74,97,119,1) 100%);
+    background: -webkit-linear-gradient(9deg, rgba(64,64,64,1) -15%, rgba(74,97,119,1) 100%);
+    background: linear-gradient(9deg, rgba(64,64,64,1) 0%, rgba(74,97,119,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#404040",endColorstr="#4a6177",GradientType=1);
 }
 
 img {
