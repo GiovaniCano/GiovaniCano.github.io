@@ -1,0 +1,27 @@
+// font-family: 'Cormorant Garamond', serif;
+// font-family: 'Nunito Sans', sans-serif;
+
+$main: 'Nunito Sans', sans-serif;
+$headings: 'Cormorant Garamond', serif;
+
+body {
+    font-family: $main;
+}
+h1, h2, h3 {
+    font-family: $headings;
+    text-align: center;
+    margin: 0 0 1.8rem 0;
+}
+
+h1 {
+    font-size: 5.2rem;
+    span {font-size: 2.8rem;}
+}
+h2 {font-size: 3.4rem;}
+h3 {font-size: 3rem;}
+
+p { 
+    letter-spacing: 0.4px;
+    margin: 1.4rem 0; 
+    font-size: 2rem;
+}

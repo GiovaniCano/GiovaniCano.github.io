@@ -1,0 +1,34 @@
+@use "base/mixins" as m;
+
+.container {
+    margin: 0 auto;
+    padding: 2rem 0;
+    max-width: 1200px;
+    width: 98%;
+}
+.container-sm {
+    @extend .container;
+    max-width: 700px;
+}
+
+.ucase {
+    text-transform: uppercase;
+}
+
+.hidden {
+    display: none !important;
+}
+.invisible {
+    visibility: hidden !important;
+}
+.transparent {
+    opacity: 0 !important;
+}
+
+.no-scroll {
+    overflow: hidden !important;
+}
+
+.button {
+    @include m.button();
+}

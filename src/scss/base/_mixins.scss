@@ -1,0 +1,53 @@
+/* RESPONSIVE */
+@mixin tablet {
+    @media(min-width: 481px){ 
+        @content;
+    }
+}
+@mixin laptop {
+    @media(min-width: 1025px){ 
+        @content;
+    }
+}
+@mixin desktop {
+    @media(min-width: 1500px){
+        @content;
+    }
+}
+
+@mixin custom($min-width) {
+    @media(min-width: $min-width){
+        @content;
+    }
+}
+@mixin fold {
+    @media(max-width: 319px){
+        @content;
+    }
+}
+
+/* - */
+@mixin button($bgColor:rebeccapurple, $color:white) {
+    width: 100%;
+    margin-top: 2rem;
+    padding: .7rem 1.5rem;
+    border: none;
+    border-radius: 99px;
+
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+
+    background-color: $bgColor;
+    color: $color;
+    
+    transition: background-color .3s ease;
+    &:hover {
+        background-color: lighten($bgColor, 15%);
+        cursor: pointer;
+    }    
+    @include tablet {
+        width: auto;
+    }
+}
