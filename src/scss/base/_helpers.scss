@@ -2,13 +2,17 @@
 
 .container {
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 4rem 0;
     max-width: 1200px;
     width: 98%;
 }
 .container-sm {
     @extend .container;
     max-width: 700px;
+}
+.container-md {
+    @extend .container;
+    max-width: 1000px;
 }
 
 .ucase {

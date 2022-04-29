@@ -1,15 +1,103 @@
 @use "base/colors" as c;
+@use "base/mixins" as m;
 
 header {
-    background-color: c.$black1;
-    color: c.$white;
-}
-#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-size: 140%;
+    background-position: bottom;
+    background-color: c.$blueDark;
+    padding: 6rem 2rem;
+    @include m.tablet {
+        background-size: cover;
+        background-position: center;
+        height: 36rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-    h1 {
+    .webp & {
+        background-image: url(../img/heroMobile.webp);
+        @include m.custom(900px) {
+            background-image: url(../img/hero.webp);
+        }
+    }
+    .no-webp & {
+        background-image: url(../img/heroMobile.jpg);
+        @include m.custom(900px) {
+            background-image: url(../img/hero.jpg);
+        }
+    }
+}
+
+.nav-fill {    
+    display: block;
+    height: 6rem;
+}
+.nav {
+    margin-top: -6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: c.$blueDark;
+    .container {
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &.nav-centered {justify-content: center;}
+
+        a { text-decoration: none; }
+        h2 {
+            color: c.$orange;
+            text-transform: uppercase;
+            margin: 0;
+            font-weight: 700;
+            font-size: 2.4rem;
+            @include m.tablet {
+                font-size: 2.8rem;
+            }
+        }
+        nav {
+            color: c.$white;
+            display: none;
+            @include m.tablet {
+                display: flex;
+            }
+        }
+        .menu-mobile {
+            display: block;
+            @include m.tablet {display: none;}
+        }
+    }
+
+    &.nav-fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
         margin: 0;
     }
+}
+.menu-mobile-modal {
+    background-color: c.$blueDark;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    nav {
+        color: c.$white;
+        a {
+            margin-bottom: 8vh;
+        }
+    }
+    svg {
+        margin-bottom: 10vh;
+        display: block;
+    }
+    @include m.tablet {display: none;}
 }

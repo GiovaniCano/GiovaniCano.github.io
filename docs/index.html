@@ -1,4 +1,3 @@
-<!-- Update title, page-id,  activeTab -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +13,325 @@
 
     <link rel="preload" href="/css/bundle.min.css" as="style">
     <link rel="stylesheet" href="/css/bundle.min.css">
+
+    <script src="/js/modernizr-3.6.0-webp.min.js"></script>
     <script src="/js/bundle.min.js"></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Giovani Cano</h1>
+        <h2 class="h1subtitle">Desarrollador Web Full Stack</h2>
+    </header>
+
+    <div class="nav-fill js-nav-fill"></div>
+    <div class="nav js-nav">
+        <div class="container nav-centered">
+            <a href="#"><h2 class="hidden js-nav-title">Giovani Cano</h2></a>
+            <nav>
+                <a data-hover="Inicio" href="#">Inicio</a>
+                <a data-hover="Portafolio" href="#portafolio">Portafolio</a>
+                <a data-hover="Habilidades" href="#habilidades">Habilidades</a>
+                <a data-hover="Sobre mí" href="#sobremi">Sobre mí</a>
+                <a data-hover="Contacto" href="#contacto">Contacto</a>
+            </nav>
+            <svg class="menu-mobile js-menu-mobile" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+        </div>
+    </div>
+    <div class="js-menu-mobile-modal menu-mobile-modal hidden">
+        <svg class="menu-mobile js-menu-mobile" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+        <nav>
+            <a data-hover="Inicio" href="#">Inicio</a>
+            <a data-hover="Portafolio" href="#portafolio">Portafolio</a>
+            <a data-hover="Habilidades" href="#habilidades">Habilidades</a>
+            <a data-hover="Sobre mí" href="#sobremi">Sobre mí</a>
+            <a data-hover="Contacto" href="#contacto">Contacto</a>
+        </nav>
+    </div>
+
+    <div class="container" id="portafolio">
+        <h2>Portafolio</h2>
+        <div class="projects">
+            <div class="project">
+                <picture>
+                    <source srcset="/img/bienesraices.webp" type="image/webp">
+                    <img class="project__image" src="/img/bienesraices.jpg" alt="Imagen del proyecto" height="200px" loading="lazy">
+                </picture>
+                <div class="project__content">
+                    <div>
+                        <h3>Compra Venta de Bienes Raíces</h3>
+                        <p class="tags">JavaScript | PHP | SQL | CSS | SCSS | HTML5 | MVC | Responsive</p>
+                    </div>
+                    <div class="project__icons">
+                        <a href="http://bienesraices.epizy.com/" class="project__icon" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+                                <line x1="10" y1="14" x2="20" y2="4" />
+                                <polyline points="15 4 20 4 20 9" />
+                              </svg>
+                            <p>Sitio Web</p>
+                        </a href="#">
+                        <a href="https://github.com/GiovaniCano/bienes-raices" class="project__icon" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                              </svg>
+                            <p>Repositorio</p>
+                        </a href="#">
+                    </div>
+                </div>
+            </div><!-- .project -->
+            <div class="project">
+                <picture>
+                    <source srcset="/img/uptask.webp" type="image/webp">
+                    <img class="project__image" src="/img/uptask.jpg" alt="Imagen del proyecto" height="200px" loading="lazy">
+                </picture>
+                <div class="project__content">
+                    <div>
+                        <h3>Administrador de Proyectos</h3>
+                        <p class="tags">JavaScript | PHP | SQL | CSS | SCSS | HTML5 | API REST | MVC | Responsive</p>
+                    </div>
+                    <div class="project__icons">
+                        <a href="http://uptask.epizy.com/" class="project__icon" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+                                <line x1="10" y1="14" x2="20" y2="4" />
+                                <polyline points="15 4 20 4 20 9" />
+                              </svg>
+                            <p>Sitio Web</p>
+                        </a href="#">
+                        <a href="https://github.com/GiovaniCano/UpTask" class="project__icon" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                              </svg>
+                            <p>Repositorio</p>
+                        </a href="#">
+                    </div>
+                </div>
+            </div><!-- .project -->
+            <div class="project">
+                <picture>
+                    <source srcset="/img/fotografo.webp" type="image/webp">
+                    <img class="project__image" src="/img/fotografo.jpg" alt="Imagen del proyecto" height="200px" loading="lazy">
+                </picture>
+                <div class="project__content">
+                    <div>
+                        <h3>Portafolio de Fotógrafo</h3>
+                        <p class="tags">JavaScript | TypeScript | CSS | SCSS | HTML5 | Responsive</p>
+                    </div>
+                    <div class="project__icons">
+                        <a href="https://giovanicano.netlify.app/" class="project__icon" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+                                <line x1="10" y1="14" x2="20" y2="4" />
+                                <polyline points="15 4 20 4 20 9" />
+                              </svg>
+                            <p>Sitio Web</p>
+                        </a href="#">
+                        <a href="https://github.com/GiovaniCano/Portafolio-Fotografo-y-Retocador" class="project__icon" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                              </svg>
+                            <p>Repositorio</p>
+                        </a href="#">
+                    </div>
+                </div>
+            </div><!-- .project -->
+            <div class="project">
+                <picture>
+                    <source srcset="/img/appsalon.webp" type="image/webp">
+                    <img class="project__image" src="/img/appsalon.jpg" alt="Imagen del proyecto" height="200px" loading="lazy">
+                </picture>
+                <div class="project__content">
+                    <div>
+                        <h3>Reservaciones para Peluquería</h3>
+                        <p class="tags">JavaScript | PHP | SQL | CSS | SCSS | HTML5 | API REST | MVC | Responsive</p>
+                    </div>
+                    <div class="project__icons">
+                        <a href="http://appsalon.epizy.com/" class="project__icon" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+                                <line x1="10" y1="14" x2="20" y2="4" />
+                                <polyline points="15 4 20 4 20 9" />
+                              </svg>
+                            <p>Sitio Web</p>
+                        </a href="#">
+                        <a href="https://github.com/GiovaniCano/appsalon" class="project__icon" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                              </svg>
+                            <p>Repositorio</p>
+                        </a href="#">
+                    </div>
+                </div>
+            </div><!-- .project -->
+            <div class="project">
+                <picture>
+                    <source srcset="/img/nz.webp" type="image/webp">
+                    <img class="project__image" src="/img/nz.jpg" alt="Imagen del proyecto" height="200px" loading="lazy">
+                </picture>
+                <div class="project__content">
+                    <div>
+                        <h3>Guía de Turismo</h3>
+                        <p class="tags">JavaScript | CSS | HTML5 | Responsive</p>
+                    </div>
+                    <div class="project__icons">
+                        <a href="https://nzguide.netlify.app/" class="project__icon" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+                                <line x1="10" y1="14" x2="20" y2="4" />
+                                <polyline points="15 4 20 4 20 9" />
+                              </svg>
+                            <p>Sitio Web</p>
+                        </a href="#">
+                        <a href="https://github.com/GiovaniCano/nzguide" class="project__icon" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                              </svg>
+                            <p>Repositorio</p>
+                        </a href="#">
+                    </div>
+                </div>
+            </div><!-- .project -->
+            <div class="project">
+                <picture>
+                    <source srcset="/img/cafe.webp" type="image/webp">
+                    <img class="project__image" src="/img/cafe.jpg" alt="Imagen del proyecto" height="200px" loading="lazy">
+                </picture>
+                <div class="project__content">
+                    <div>
+                        <h3>Blog Sobre Café</h3>
+                        <p class="tags">CSS | HTML5 | Responsive</p>
+                    </div>
+                    <div class="project__icons">
+                        <a href="https://giovanicano.github.io/BlogDeCafe/" class="project__icon" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+                                <line x1="10" y1="14" x2="20" y2="4" />
+                                <polyline points="15 4 20 4 20 9" />
+                              </svg>
+                            <p>Sitio Web</p>
+                        </a href="#">
+                        <a href="https://github.com/GiovaniCano/BlogDeCafe" class="project__icon" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                              </svg>
+                            <p>Repositorio</p>
+                        </a href="#">
+                    </div>
+                </div>
+            </div><!-- .project -->
+        </div>
+    </div>
+
+    <div id="habilidades">
+        <div class="container-sm">
+            <h2>Habilidades</h2>
+            <div>
+                <div><img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" /></div>
+                <div><img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" /></div>
+                <div><img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
+                <div><img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /></div>
+                <div><img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /></div>
+                <div><img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" /></div>
+                <div><img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /></div>
+                <div><img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" /></div>
+                <div><img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg" /></div>
+                <div><img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" /></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sobremi" class="container-md">
+        <h2>Sobre Mí</h2>
+        <div class="sobremi__card">
+            <!-- <picture> -->
+                <!-- <source srcset="/img/giovani.webp" type="image/webp"> -->
+                <img src="/img/giovani.jpg" alt="Fotografía de Giovani" height="350px" width="350px" loading="lazy">
+            <!-- </picture> -->
+            <div class="sobremi__content">
+                <div class="sobremi__content_top">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#D4D4D4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="11" r="3" />
+                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                          </svg>
+                          <p>Ciudad de México</p>
+                    </div>
+                    <a href="https://github.com/GiovaniCano" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                          </svg>
+                          <span>Perfil GitHub</span>
+                    </a>
+                </div>
+                <div class="sobremi__text">
+                    <p>Actualmente estoy enfocado en ser un excelente desarrollador full stack, y lo que más disfruto es el back end.</p>
+                    <p>Amo aprender cosas nuevas y diferentes de forma autodidacta y así he hecho desde que tengo memoria.</p>
+                    <p>Algún día no muy lejano seré el mejor líder que las personas que trabajen conmigo hayan conocido, pero mientras tanto, aprendo de quien tenga más experiencia y le apoyo lo mejor posible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contacto">
+        <div class="container-md">
+            <h2>Contacto</h2>
+            <div class="contacto__medios">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                      </svg>
+                    <p>giovanicnvg@gmail.com</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                      </svg>
+                    <p>55 4808 6938</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EC7E57" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                        <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                      </svg>
+                    <p>+52 55 4808 6938</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="copy container">
+            <p>© 2022, Giovani Cano. Todos los derechos reservados.</p>
+            <p>Cualquier otra marca registrada utilizada en este sitio es propiedad de sus respectivos dueños.</p>
+        </div>
+    </footer>
 </body>
 </html>
