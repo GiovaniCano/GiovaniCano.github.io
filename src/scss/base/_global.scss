@@ -24,6 +24,7 @@ nav {
     @include m.tablet {
         width: auto;
         flex-direction: row;
+        align-items: center;
     }
 
     a {
@@ -38,6 +39,19 @@ nav {
                 margin-bottom: 0;
                 margin-right: 3rem;
             }
+        }
+
+        &:before {
+            display: block;
+            content: attr(data-hover);
+            font-weight: 700;
+            height: 0;
+            visibility: hidden;
+        }
+
+        &:hover {
+            font-weight: 700;
+            color: c.$orange;
         }
     }
 }

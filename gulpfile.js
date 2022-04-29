@@ -20,11 +20,11 @@ const terser = require("gulp-terser-js")
 
 const paths = {
     srcImg : "./src/img/**/*.{jpg,png,webp}",
-    destImg : "./build/img/",
+    destImg : "./docs/img/",
     srcJS : "./src/ts/**/*.ts",
-    destJS : "./build/js/",
+    destJS : "./docs/js/",
     srcCSS : "./src/scss/**/*.scss",
-    destCSS : "./build/css/"
+    destCSS : "./docs/css/"
 }
 
 function img(done) {
