@@ -1,3 +1,5 @@
+@use "base/colors" as c;
+
 /* RESPONSIVE */
 @mixin tablet {
     @media(min-width: 481px){ 
@@ -27,7 +29,7 @@
 }
 
 /* - */
-@mixin button($bgColor:rebeccapurple, $color:white) {
+@mixin button($bgColor:transparent, $color:c.$orange) {
     width: 100%;
     margin-top: 2rem;
     padding: .7rem 1.5rem;
