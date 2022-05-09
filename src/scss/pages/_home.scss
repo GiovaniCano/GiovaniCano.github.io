@@ -134,8 +134,9 @@
         flex-direction: column;
         color: c.$white;
         justify-content: space-between;
+        align-items: center;
         padding: 0 2.5rem;
-        @include m.tablet {
+        @include m.custom(900px) {
             flex-direction: row;
         }
 
@@ -143,6 +144,9 @@
             display: flex;
             align-items: center;
             margin-bottom: 1rem;
+            @include m.fold {
+                flex-direction: column;
+            }
             svg {
                 margin-right: 1rem;
             }
