@@ -94,13 +94,13 @@ header {
         nav {
             color: c.$white;
             display: none;
-            @include m.tablet {
+            @include m.custom(850px) {
                 display: flex;
             }
         }
         .menu-mobile {
             display: block;
-            @include m.tablet {display: none;}
+            @include m.custom(850px) {display: none;}
         }
     }
 

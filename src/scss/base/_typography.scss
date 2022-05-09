@@ -23,6 +23,7 @@ h1 {
     color: c.$orange;
     font-weight: 700;
     margin-bottom: 1.4rem;
+    white-space: nowrap;
     span {
         font-size: 2.2rem;
         color: c.$grey;
@@ -37,7 +38,8 @@ h1 {
 }
 h2 {
     font-size: 3.4rem;
-    color: c.$white;
+    color: c.$white;    
+    white-space: nowrap;
 }
 h3 {
     font-size: 3rem;
