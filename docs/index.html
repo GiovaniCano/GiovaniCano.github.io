@@ -19,14 +19,23 @@
 </head>
 <body>
     <header>
-        <h1>Giovani Cano</h1>
-        <h2 class="h1subtitle">Desarrollador Web Full Stack</h2>
+        <div class="overlay">
+            <div class="header-text">
+                <h1>Giovani Cano <span>Desarrollador Web Full Stack</span></h1>
+            </div>
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="/video/video.webm" type="video/webm">
+                <source src="/video/video.mp4" type="video/mp4">
+            </video>
+        </div>
     </header>
 
     <div class="nav-fill js-nav-fill"></div>
     <div class="nav js-nav">
         <div class="container nav-centered">
-            <a href="#"><h2 class="hidden js-nav-title">Giovani Cano</h2></a>
+            <a href="#" class="hidden js-nav-title"><h2>Giovani Cano</h2></a>
             <nav>
                 <a data-hover="Inicio" href="#">Inicio</a>
                 <a data-hover="Portafolio" href="#portafolio">Portafolio</a>
