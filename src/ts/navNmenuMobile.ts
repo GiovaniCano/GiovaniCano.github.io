@@ -1,12 +1,12 @@
 function nav() {
     window.onscroll = ()=>{        
-        const nav = document.querySelector(".js-nav")
+        const nav = document.querySelector(".js-nav-bar")
         if(nav) {
             const navFill = document.querySelector(".js-nav-fill")!
             let navFillTop = navFill.getBoundingClientRect().top
     
             const navTitle = document.querySelector(".js-nav-title")!
-            const navContainer = document.querySelector(".js-nav .container")!
+            const navContainer = document.querySelector(".js-nav-bar .container")!
     
             if(navFillTop <= 0) {
                 navTitle.classList.remove("hidden")
