@@ -1,9 +1,11 @@
+let currentLanguage:string = "en"
+
 function multiLingual() {
     const langIcons = document.querySelectorAll(".js-lang-icon")! as NodeListOf<HTMLElement>
     langIcons.forEach(icon=>{
         icon.onclick = e => {
             e.preventDefault()
-            langIcons.forEach(icon=>{
+            langIcons.forEach(icon=>{ //update all language buttons
                 const en = icon.querySelector('[data-langIcon="en"]')
                 const es = icon.querySelector('[data-langIcon="es"]')
 
@@ -12,13 +14,18 @@ function multiLingual() {
                 if(en.classList.contains("active-lang")) { // en to es
                     en.classList.remove("active-lang")
                     es.classList.add("active-lang")
-                    translate("es")
                 } else { // es to en
                     en.classList.add("active-lang")
                     es.classList.remove("active-lang")
-                    translate("en")
                 }
             })
+            
+            if(currentLanguage === "en") {
+                currentLanguage = "es"
+            } else {
+                currentLanguage = "en"
+            }
+            translate(currentLanguage)
         }
     })
 }
