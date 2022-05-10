@@ -1,0 +1,28 @@
+{
+    "h1span": "Desarrollador Web Full Stack",
+
+    "secHome": "Inicio",
+    "secPort": "Portafolio",
+    "secSkills": "Habilidades",
+    "secAbout": "Sobre mí",
+    "secContact": "Contacto",
+
+    "projectLinkWeb": "Sitio Web",
+    "projectLinkGitHub": "Repositorio",
+
+    "project1": "Compra Venta de Bienes Raíces",
+    "project2": "Administrador de Proyectos",
+    "project3": "Portafolio de Fotógrafo",
+    "project4": "Reservaciones para Peluquería",
+    "project5": "Guía de Turismo",
+    "project6": "Blog Sobre Café",
+
+    "location": "Mexico City",
+    "gitHubProfile": "Perfil GitHub",
+    "aboutText1": "Actualmente estoy enfocado en ser un excelente desarrollador full stack, y lo que más disfruto es el back end.",
+    "aboutText2": "Amo aprender cosas nuevas y diferentes de forma autodidacta y así he hecho desde que tengo memoria.",
+    "aboutText3": "Voy a convertirme en un gran líder, pero mientras tanto, aprendo de quien tenga más experiencia y le apoyo lo mejor posible.",
+
+    "footer1": "© 2022, Giovani Cano. Todos los derechos reservados.",
+    "footer2": "Cualquier otra marca registrada utilizada en este sitio es propiedad de sus respectivos dueños."
+}
