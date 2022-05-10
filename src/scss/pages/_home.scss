@@ -22,6 +22,8 @@
         background: -webkit-linear-gradient(0deg, rgba(10,36,62,0.24) 0%, rgba(0,35,70,0.69) 100%);
         background: linear-gradient(0deg, rgba(10,36,62,0.24) 0%, rgba(0,35,70,0.69) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a243e",endColorstr="#002346",GradientType=1);
+        
+        box-shadow: 5px 5px 10px rgba(0,0,0,.25);
 
         display: flex;
         flex-direction: column;
@@ -70,13 +72,17 @@
 
 #habilidades {
     background-color: c.$blueMid;
-    margin-top: 2rem;
+    margin-top: 2rem;    
+    box-shadow: 0 4px 7px rgba(0,0,0,.3);
     .container-sm div {        
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 2rem;
+        img {
+            width: auto;
+        }
     }
 }
 
@@ -84,6 +90,7 @@
     display: flex;
     flex-direction: column;
     background-color: c.$blueMid;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.25);
     @include m.custom(750px) {
         flex-direction: row;
     }
@@ -124,6 +131,7 @@
                 border: 3px solid c.$orange;
                 padding: .7rem 1.4rem;
                 letter-spacing: 1px;
+                font-weight: 700;
             }
         }        
         p {
@@ -147,6 +155,11 @@
             flex-direction: row;
         }
 
+        a {
+            color: inherit;
+            text-decoration: none;
+            &:hover{color: c.$orange;}
+        }
         div {
             display: flex;
             align-items: center;

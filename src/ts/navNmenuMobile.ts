@@ -33,4 +33,14 @@ function menuMobile() {
             }
         })
     }
+
+    // protect body's scroll when the modal menu is hidden because of the resize
+    window.onresize = () => {
+        const modal = document.querySelector(".js-menu-mobile-modal")! as HTMLElement
+        if(window.getComputedStyle(modal).display == "none") {
+            document.body.classList.remove("no-scroll")
+        } else {
+            document.body.classList.add("no-scroll")
+        }
+    }
 }
