@@ -3,4 +3,5 @@ document.addEventListener("DOMContentLoaded", function():void{
     menuMobile()
     video()
     navScroll()
+    multiLingual()
 })
