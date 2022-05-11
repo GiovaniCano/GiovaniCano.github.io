@@ -1,4 +1,5 @@
 @use "base/colors" as c;
+@use "base/mixins" as m;
 
 footer {
     color: c.$white;
@@ -8,6 +9,24 @@ footer {
         text-align: center;
         p {
             font-size: 1.6rem;
+        }
+        .site-repo {
+            display: flex;
+            flex-direction: column;
+            margin: 14px 0 25px 0;
+            align-items: center;
+            justify-content: center;
+            p{margin: 0 1rem 0 0;}
+            a{
+                word-break: break-all;
+                color: c.$white;
+                &:hover {
+                    color: c.$orange;
+                }
+            }
+            @include m.custom(800px) {
+                flex-direction: row;
+            }
         }
     }
 }
