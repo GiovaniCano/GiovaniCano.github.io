@@ -180,5 +180,10 @@
                 margin-right: 1rem;
             }
         }
+        .contact-email {
+            @include m.fold{
+                font-size: 6.8vw;
+            }
+        }
     }
 }
