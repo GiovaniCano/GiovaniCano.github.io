@@ -6,4 +6,5 @@ document.addEventListener("DOMContentLoaded", function():void{
     video()
     navScroll()
     multiLingual()
+    imagesModal()
 })
