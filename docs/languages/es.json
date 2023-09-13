@@ -10,6 +10,7 @@
     "projectLinkWeb": "Sitio Web",
     "projectLinkGitHub": "Repositorio",
 
+    "pro8": "Gestión de flujos de trabajo",
     "pro7": "Gestión de Cocina y Listas Automáticas",
     "pro6": "Blog Público",
     "pro5": "Administrador de Proyectos",
@@ -21,12 +22,13 @@
     "location": "CDMX",
     "gitHubProfile": "Perfil GitHub",
 
-    "about1": "Actualmente estoy enfocado en ser un excelente desarrollador full stack.",
-    "about2": "Amo aprender a hacer cosas nuevas de forma autodidacta y así he hecho desde que tengo memoria.",
-    "about3": "También me gusta el desarrollo de videojuegos, diseño 3d y la fotografía de moda.",
-    "about4": "Me adapto fácilmente a cualquier tipo de personalidad lo que me permite trabajar en equipo con todo tipo de personas y mantener la paciencia y una buena actitud.",
+    "about1": "Soy un desarrollador web full stack capaz de abordar proyectos de manera completa, comprendiendo y contribuyendo en todos los aspectos del desarrollo web.",
+    "about2": "Siempre estoy listo para aprender cosas nuevas y adaptarme a lo que el proyecto requiere. Mi actitud positiva y mi capacidad para asimilar rápidamente nuevos conocimientos me permiten enfrentar cualquier desafío con entusiasmo.",
+    "about3": "Puedo liderar con paciencia y equidad, seguir instrucciones o ser proactivo según lo requiera la situación. Soy una persona organizada, honesta y de confianza en cualquier situación.",
+    "about4": "A lo largo de mi vida, he enfrentado desafíos y aprendido que no existe obstáculo insuperable. La resiliencia y la determinación son dos de mis rasgos más importantes. Cada fracaso ha sido una oportunidad para aprender y mejorar.",
+    "about5": "Mi pasión por la resolución de problemas y mi determinación inquebrantable trabajan juntos para impulsar el éxito en cada proyecto.",
 
     "footer0": "El repositorio de este sitio:",
-    "footer1": "© 2022, Giovani Cano. Todos los derechos reservados.",
+    "footer1": "Giovani Cano. Todos los derechos reservados.",
     "footer2": "Cualquier otra marca registrada utilizada en este sitio es propiedad de sus respectivos dueños."
 }

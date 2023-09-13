@@ -10,6 +10,7 @@
     "projectLinkWeb": "Web Site",
     "projectLinkGitHub": "Repository",
 
+    "pro8": "Workflows Management",
     "pro7": "Kitchen Management and Automatic Lists",
     "pro6": "Public Blog",
     "pro5": "Projects Administrator",
@@ -21,12 +22,13 @@
     "location": "Mexico City",
     "gitHubProfile": "GitHub Profile",
 
-    "about1": "I'm currently focused on being an excellent full stack developer.",
-    "about2": "I love to learn to do new things by myself, and I've done it since I can remember.",
-    "about3": "I also like game development, 3d design and fashion photography.",
-    "about4": "I adapt easily to any personality so I'm able to work in team with any kind of persons and keep patience and good attitude.",
+    "about1": "I'm a full-stack web developer capable of handling projects in-depth, understanding and contributing to all aspects of web development.",
+    "about2": "I'm always ready to learn new things and adapt to what the project requires. My positive attitude and ability to quickly absorb new knowledge allow me to face any challenge with enthusiasm.",
+    "about3": "I can lead with patience and fairness, follow instructions, or be proactive as the situation demands. I'm an organized, honest, and trustworthy person in any situation.",
+    "about4": "Through my life, I've faced challenges and learned that no obstacle is too big. Resilience and determination are two of my most important qualities. Every failure has been an opportunity to learn and improve.",
+    "about5": "My passion for problem-solving and my resolute determination work together to drive success in every project.",
 
     "footer0": "This site's repository:",
-    "footer1": "© 2022, Giovani Cano. All rights reserved.",
+    "footer1": "Giovani Cano. All rights reserved.",
     "footer2": "Any other copyrighted brands used in this web site belong to their respective owners."
 }

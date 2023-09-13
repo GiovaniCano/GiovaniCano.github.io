@@ -1,7 +1,11 @@
 function imagesModal() {
     document.getElementById('js-images-blog')!.onclick = () => showImages(['blog-angularavel-mockup.jpg'])
+
     document.getElementById('js-images-corio-eer')!.onclick = () => showImages(['corio-eer.png'])
     document.getElementById('js-images-corio-mockup')!.onclick = () => showImages(['corio-adobe_xd.jpg', 'corio-balsamiq.jpg'])
+
+    document.getElementById('js-images-workflows-eeruml')!.onclick = () => showImages(['workflows-eer.png', 'workflows-uml.png'])
+    document.getElementById('js-images-workflows-mockup')!.onclick = () => showImages(['workflows-adobe_xd.jpg'])
 }
 
 function showImages(images: string[]): void {
